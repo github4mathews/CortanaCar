@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -25,6 +27,9 @@ namespace CortanaCarUWP
         public MainPage()
         {
             this.InitializeComponent();
+
+            var logTexts = (Application.Current as App).LogTexts;
+            this.DataContext = logTexts;
         }
     }
 }

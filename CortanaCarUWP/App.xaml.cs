@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -24,6 +25,8 @@ namespace CortanaCarUWP
     /// </summary>
     sealed partial class App : Application
     {
+        public ObservableCollection<string> LogTexts { get; } = new ObservableCollection<string>();
+
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -117,7 +120,7 @@ namespace CortanaCarUWP
             var speechRecognitionResult = commandArgs.Result;
             var voiceCommandName = speechRecognitionResult.RulePath.First();
 
-            // TODO: Do action
+            this.LogTexts.Insert(0, voiceCommandName);
         }
     }
 }
