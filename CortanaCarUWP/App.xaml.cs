@@ -111,7 +111,7 @@ namespace CortanaCarUWP
             deferral.Complete();
         }
 
-        protected override void OnActivated(IActivatedEventArgs args)
+        protected override async void OnActivated(IActivatedEventArgs args)
         {
             base.OnActivated(args);
             if (args.Kind != ActivationKind.VoiceCommand) return;
@@ -120,7 +120,10 @@ namespace CortanaCarUWP
             var speechRecognitionResult = commandArgs.Result;
             var voiceCommandName = speechRecognitionResult.RulePath.First();
 
-            this.LogTexts.Insert(0, voiceCommandName);
+            this.LogTexts?.Insert(0, voiceCommandName);
+
+            var localFolder = ApplicationData.Current.LocalFolder;
+            await localFolder.CreateFileAsync($"cortanacar-{DateTime.UtcNow.ToBinary():X16}-{voiceCommandName}.cmd");
         }
     }
 }
