@@ -5,16 +5,21 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CortanaCarUWP", "CortanaCarUWP\CortanaCarUWP.csproj", "{5639344B-0618-4D00-8936-E932F94F16A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CortanaCarConsole", "CortanaCarConsole\CortanaCarConsole.csproj", "{EC3C603D-6520-41A2-B86F-907B6ED8CF76}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|ARM = Release|ARM
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5639344B-0618-4D00-8936-E932F94F16A5}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{5639344B-0618-4D00-8936-E932F94F16A5}.Debug|ARM.ActiveCfg = Debug|ARM
 		{5639344B-0618-4D00-8936-E932F94F16A5}.Debug|ARM.Build.0 = Debug|ARM
 		{5639344B-0618-4D00-8936-E932F94F16A5}.Debug|ARM.Deploy.0 = Debug|ARM
@@ -24,6 +29,7 @@ Global
 		{5639344B-0618-4D00-8936-E932F94F16A5}.Debug|x86.ActiveCfg = Debug|x86
 		{5639344B-0618-4D00-8936-E932F94F16A5}.Debug|x86.Build.0 = Debug|x86
 		{5639344B-0618-4D00-8936-E932F94F16A5}.Debug|x86.Deploy.0 = Debug|x86
+		{5639344B-0618-4D00-8936-E932F94F16A5}.Release|Any CPU.ActiveCfg = Release|x86
 		{5639344B-0618-4D00-8936-E932F94F16A5}.Release|ARM.ActiveCfg = Release|ARM
 		{5639344B-0618-4D00-8936-E932F94F16A5}.Release|ARM.Build.0 = Release|ARM
 		{5639344B-0618-4D00-8936-E932F94F16A5}.Release|ARM.Deploy.0 = Release|ARM
@@ -33,6 +39,22 @@ Global
 		{5639344B-0618-4D00-8936-E932F94F16A5}.Release|x86.ActiveCfg = Release|x86
 		{5639344B-0618-4D00-8936-E932F94F16A5}.Release|x86.Build.0 = Release|x86
 		{5639344B-0618-4D00-8936-E932F94F16A5}.Release|x86.Deploy.0 = Release|x86
+		{EC3C603D-6520-41A2-B86F-907B6ED8CF76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC3C603D-6520-41A2-B86F-907B6ED8CF76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC3C603D-6520-41A2-B86F-907B6ED8CF76}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{EC3C603D-6520-41A2-B86F-907B6ED8CF76}.Debug|ARM.Build.0 = Debug|Any CPU
+		{EC3C603D-6520-41A2-B86F-907B6ED8CF76}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EC3C603D-6520-41A2-B86F-907B6ED8CF76}.Debug|x64.Build.0 = Debug|Any CPU
+		{EC3C603D-6520-41A2-B86F-907B6ED8CF76}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EC3C603D-6520-41A2-B86F-907B6ED8CF76}.Debug|x86.Build.0 = Debug|Any CPU
+		{EC3C603D-6520-41A2-B86F-907B6ED8CF76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC3C603D-6520-41A2-B86F-907B6ED8CF76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC3C603D-6520-41A2-B86F-907B6ED8CF76}.Release|ARM.ActiveCfg = Release|Any CPU
+		{EC3C603D-6520-41A2-B86F-907B6ED8CF76}.Release|ARM.Build.0 = Release|Any CPU
+		{EC3C603D-6520-41A2-B86F-907B6ED8CF76}.Release|x64.ActiveCfg = Release|Any CPU
+		{EC3C603D-6520-41A2-B86F-907B6ED8CF76}.Release|x64.Build.0 = Release|Any CPU
+		{EC3C603D-6520-41A2-B86F-907B6ED8CF76}.Release|x86.ActiveCfg = Release|Any CPU
+		{EC3C603D-6520-41A2-B86F-907B6ED8CF76}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
