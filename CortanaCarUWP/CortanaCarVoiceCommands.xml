@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.1">
   <CommandSet xml:lang="en-us" Name="CortanaCarVoiceCommands_en-us">
-    <CommandPrefix>Wanta, </CommandPrefix>
-    <Example>forward, stop, backward, turn left, turn right</Example>
+    <CommandPrefix>Please</CommandPrefix>
+    <Example>Please go ahead, stop, backward, turn left, turn right</Example>
 
     <Command Name="MoveForward">
-      <Example>forward</Example>
-      <ListenFor>forward</ListenFor>
+      <Example>Please go ahead</Example>
+      <ListenFor>go ahead</ListenFor>
       <Feedback>moving forward.</Feedback>
       <Navigate/>
     </Command>
@@ -14,6 +14,7 @@
     <Command Name="MoveBackward">
       <Example>backward</Example>
       <ListenFor>backward</ListenFor>
+      <ListenFor>move backward</ListenFor>
       <Feedback>moving backward.</Feedback>
       <Navigate/>
     </Command>
@@ -26,14 +27,18 @@
     </Command>
 
     <Command Name="TurnLeft">
-      <Example>turn left</Example>
+      <Example>Please turn left your body</Example>
+      <ListenFor>turn left your body</ListenFor>
+      <ListenFor>turn the left</ListenFor>
       <ListenFor>turn left</ListenFor>
       <Feedback>turning left.</Feedback>
       <Navigate/>
     </Command>
 
     <Command Name="TurnRight">
-      <Example>turn right</Example>
+      <Example>Please turn right your body</Example>
+      <ListenFor>turn right your body</ListenFor>
+      <ListenFor>turn the left</ListenFor>
       <ListenFor>turn right</ListenFor>
       <Feedback>turning right.</Feedback>
       <Navigate/>
